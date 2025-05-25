@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
+/* Global Styling */
 * {
   margin: 0;
   padding: 0;
@@ -9,6 +10,14 @@ li {
 }
 a {
   text-decoration: none;
+  color: var(--primary-text);
+}
+p {
+  color: var(--secondary-text);
+}
+h1,
+h2,
+h3 {
   color: var(--primary-text);
 }
 :root {
@@ -121,16 +130,28 @@ a {
   padding: 40px;
 }
 .hero-content h1 {
-  color: var(--primary-text);
   font-size: 2.5rem;
 }
 .hero-content h1 span {
   display: block;
   color: var(--primary-color);
 }
-.hero-content p {
-  color: var(--secondary-text);
-}
 .hero-content > * {
   margin-bottom: 20px;
+}
+/* Clients Section */
+.clients {
+  text-align: center;
+  padding: 50px;
+}
+.clients > * {
+  margin-bottom: 10px;
+}
+.clients-wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  width: 50vw;
+  gap: 40px;
+  margin: 0 auto;
+  justify-content: space-around;
 }
