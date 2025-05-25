@@ -15,6 +15,15 @@ a {
 p {
   color: var(--secondary-text);
 }
+h2 {
+  font-size: 2rem;
+}
+h2 > span {
+  display: block;
+}
+h3 {
+  font-size: 1.5rem;
+}
 h1,
 h2,
 h3 {
@@ -142,7 +151,8 @@ h3 {
 /* Clients Section */
 .clients {
   text-align: center;
-  padding: 50px;
+  padding: 0px 50px;
+  margin: 50px 0px;
 }
 .clients > * {
   margin-bottom: 10px;
@@ -152,6 +162,43 @@ h3 {
   flex-flow: row wrap;
   width: 50vw;
   gap: 40px;
-  margin: 0 auto;
+  margin: 40px auto;
   justify-content: space-around;
+}
+/* Communities Section */
+.community {
+  text-align: center;
+  padding: 0px 50px;
+  margin: 50px 0px;
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  align-items: center;
+}
+.community > * {
+  margin-bottom: 5px;
+}
+.community-wrapper {
+  margin-top: 10px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  gap: 50px;
+}
+.community-card {
+  box-shadow: 2px 2px 5px rgb(231, 229, 229);
+  width: 250px;
+  border-radius: 5px;
+  padding: 10px;
+  transition: 0.4s ease box-shadow;
+}
+.community-card:hover {
+  box-shadow: -2px -2px 5px rgb(231, 229, 229);
+}
+.community-card > * {
+  margin-bottom: 20px;
+}
+.community-card p {
+  font-size: 10px;
+  text-align: center;
 }
