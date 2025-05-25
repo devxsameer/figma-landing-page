@@ -35,6 +35,8 @@ a {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  background-color: var(--main-bg-color);
+  z-index: 10;
 }
 .header .logo {
   font-size: 24px;
@@ -61,7 +63,6 @@ a {
   background-color: var(--hero-bg-color);
   width: 100%;
   transition: 0.5s ease all;
-  z-index: -1;
 }
 .nav.active {
   top: var(--header-height);
@@ -80,6 +81,10 @@ a {
   background-color: var(--primary-color);
   color: var(--main-bg-color);
   font-family: "Roboto Mono", monospace;
+  transition: 0.5s ease box-shadow;
+}
+.register-btn:hover {
+  box-shadow: 0px 0px 20px var(--primary-color);
 }
 @media only screen and (min-width: 790px) {
   .hamburger {
