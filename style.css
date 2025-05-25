@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: var(--primary-text);
+}
+:root {
+  font-family: "Roboto Mono", monospace;
+  --header-height: 60px;
+  --primary-color: #4caf4f;
+  --hero-bg-color: #f5f7fa;
+  --main-bg-color: #fff;
+  --primary-text: #4d4d4d;
+  --secondary-text: #717171;
+}
+/* Header Section */
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  background-color: #fff;
+}
+.main-header {
+  padding: 0 40px;
+  height: var(--header-height);
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header .logo {
+  font-size: 24px;
+}
+.hamburger i {
+  font-size: 24px;
+  background-color: var(--primary-color);
+  padding: 3px 5px;
+  color: var(--main-bg-color);
+}
+.hamburger:hover i {
+  background-color: white;
+  color: #4d4d4d;
+  border: 2px solid var(--primary-color);
+}
+
+.nav {
+  position: absolute;
+  top: -400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--hero-bg-color);
+  width: 100%;
+  transition: 0.5s ease all;
+  z-index: -1;
+}
+.nav.active {
+  top: var(--header-height);
+}
+.nav .nav-item {
+  padding: 10px;
+}
+.nav .nav-item a:hover {
+  color: black;
+}
+.register-btn {
+  padding: 10px 20px;
+  width: max-content;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--primary-color);
+  color: var(--main-bg-color);
+  font-family: "Roboto Mono", monospace;
+}
+@media only screen and (min-width: 790px) {
+  .hamburger {
+    display: none;
+  }
+  .header {
+    flex-direction: row;
+    align-items: center;
+    padding: 0px 20px;
+    max-width: 1300px;
+    margin: 0 auto;
+  }
+  .main-header {
+    padding: 0;
+  }
+  .nav {
+    position: initial;
+    z-index: initial;
+    flex-direction: row;
+    background-color: inherit;
+  }
+}
+/* Hero Section */
+.hero {
+  min-height: 80vh;
+  background-color: var(--hero-bg-color);
+  align-items: center;
+  justify-content: space-around;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+.hero-content {
+  padding: 40px;
+}
+.hero-content h1 {
+  color: var(--primary-text);
+  font-size: 2.5rem;
+}
+.hero-content h1 span {
+  display: block;
+  color: var(--primary-color);
+}
+.hero-content p {
+  color: var(--secondary-text);
+}
+.hero-content > * {
+  margin-bottom: 20px;
+}
