@@ -270,3 +270,75 @@ h3 {
   align-items: center;
   gap: 20px;
 }
+/* Marketing Section */
+
+.marketing {
+  padding: 30px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column nowrap;
+}
+.marketing-content {
+  max-width: 900px;
+}
+.marketing-content > * {
+  margin-bottom: 10px;
+}
+.marketing-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  max-width: 1200px;
+  margin: 30px;
+  align-items: center;
+  justify-content: center;
+}
+.marketing-card-content {
+  position: absolute;
+  width: 200px;
+  left: 30px;
+  top: 60%;
+  font-size: 0.8rem;
+  border-radius: 5px;
+  padding: 5px;
+  background-color: var(--hero-bg-color);
+  box-shadow: 2px 2px 5px rgb(215, 215, 215);
+}
+.marketing-card-content > * {
+  margin: 5px;
+}
+.marketing-card-content .read-more-btn {
+  color: var(--primary-color);
+}
+.marketing-cards > .marketing-card {
+  width: 260px;
+  height: 260px;
+  position: relative;
+}
+/* Greeting Section */
+.greeting {
+  text-align: center;
+  background-color: var(--hero-bg-color);
+  padding: 40px;
+  font-size: 1.2rem;
+  color: #2e2d2d;
+}
+.greeting h1 {
+  margin-bottom: 20px;
+}
+/* Footer */
+.footer {
+  background: #263238;
+  text-align: center;
+}
+.footer h3 {
+  font-size: 1rem;
+  padding: 10px;
+  color: var(--main-bg-color);
+}
+.footer h3 a {
+  text-decoration: underline;
+  color: #4caf4f;
+}
