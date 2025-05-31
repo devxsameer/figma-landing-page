@@ -1,0 +1,30 @@
+/* Hero Section */
+.hero {
+  min-height: 80vh;
+  background-color: var(--hero-bg-color);
+  align-items: center;
+  justify-content: space-around;
+  display: flex;
+  flex-wrap: wrap;
+}
+.hero-content {
+  padding: 40px;
+}
+.hero-content h1 {
+  font-size: 2.5rem;
+}
+.hero-content h1 span {
+  display: block;
+  color: var(--primary-color);
+}
+.hero-content > * {
+  margin-bottom: 20px;
+}
+.img-wrapper {
+  margin: 40px;
+}
+@media only screen and (min-width: 790px) {
+  .hero-content h1 {
+    font-size: 3rem;
+  }
+}

@@ -1,0 +1,69 @@
+/* Footer Section */
+.footer {
+  background-color: #263238;
+  display: flex;
+  flex-flow: row wrap;
+  padding: 40px 100px;
+  gap: 30px;
+}
+.footer > * {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 10px;
+}
+.footer > * > * {
+  color: rgb(244, 243, 243);
+}
+.footer > * > h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+.footer .first {
+  flex-grow: 2;
+  color: white;
+  gap: 30px;
+}
+.social i {
+  background-color: rgba(128, 128, 128, 0.4);
+  padding: 5px;
+  border-radius: 50%;
+  margin: 5px;
+}
+.footer .first .logo {
+  font-size: 2rem;
+}
+.footer .first p {
+  font-size: 0.8rem;
+  color: rgb(208, 207, 207);
+}
+.footer .first p > span {
+  display: block;
+}
+.footer ul {
+  display: flex;
+  gap: 10px;
+  flex-flow: column wrap;
+  font-size: 0.7rem;
+  color: rgb(234, 228, 228);
+}
+.footer .fourth {
+  flex: 1;
+}
+.footer .fourth .email-form input {
+  background-color: transparent;
+  border: none;
+}
+.footer .fourth .email-form input:focus {
+  border: none;
+  outline: none;
+  color: white;
+}
+.footer .fourth .email-form {
+  background-color: rgba(128, 128, 128, 0.4);
+  padding: 8px 10px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+}

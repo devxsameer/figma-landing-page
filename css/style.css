@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
+/* Global Styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: var(--primary-text);
+}
+p {
+  color: var(--secondary-text);
+}
+h2 {
+  font-size: 2rem;
+}
+h2 > span {
+  display: block;
+}
+h3 {
+  font-size: 1.5rem;
+}
+h1,
+h2,
+h3 {
+  color: var(--primary-text);
+}
+:root {
+  font-family: "Roboto Mono", monospace;
+  --header-height: 60px;
+  --primary-color: #4caf4f;
+  --hero-bg-color: #f5f7fa;
+  --main-bg-color: #fff;
+  --primary-text: #4d4d4d;
+  --secondary-text: #717171;
+}
+/* Separator */
+.separator {
+  border: 2px solid var(--secondary-text);
+  width: 25%;
+  margin: 0 auto;
+}
+
+/* My Footer */
+.my-footer {
+  border-top: 2px solid white;
+  background-color: #263238;
+  text-align: center;
+}
+.my-footer h3 {
+  font-size: 0.8rem;
+  padding: 10px;
+  color: var(--main-bg-color);
+}
+.my-footer h3 a {
+  text-decoration: underline;
+  color: #4caf4f;
+}
